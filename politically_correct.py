@@ -1,8 +1,9 @@
 #!/usr/bin/python2
+#encoding: utf-8
 # Made by venam <patrick [at] unixhub [dot] com>
 #COPYRIGHT AND PERMISSION NOTICE
 #
-#Copyright (c) 2013, Patrick Louis <patrick at unixhub.net>
+#Copyright 2013, Patrick Louis <patrick at unixhub.net>
 #
 #All rights reserved.
 
