@@ -42,6 +42,8 @@ def polit_changer(the_string):
         word = word.split(":")
         if " "+word[0].replace("\n","")+" " in the_string:
             the_string = the_string.replace(" "+word[0].replace("\n","")+" ", " "+word[1].replace("\n","")+" ")
+        if "\n"+word[0].replace("\n","")+" " in the_string:
+            the_string = the_string.replace("\n"+word[0].replace("\n","")+" ", " "+word[1].replace("\n","")+" ")
     return the_string
 
 def main():
