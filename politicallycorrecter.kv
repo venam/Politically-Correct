@@ -1,0 +1,80 @@
+#:kivy 1.8.0
+
+<TitleBar>:
+	orientation: "horizontal"
+	size_hint_y: 0.08
+	canvas:
+		Color:
+			rgba: 0.35, 0.35, 0.35, 1
+		Rectangle:
+			size: self.size
+			pos: self.pos
+
+	Label:
+		text: "Political Correcter"
+		font_size: '20sp'
+		halign: 'center'
+		size: self.width, self.height
+
+<MainMenu>:
+	convert_button: convert_button_main
+	dictionary_button: dictionary_button_main
+	BoxLayout:
+		size: root.size
+		pos: root.pos
+		padding: 15
+		size_hint_y: 0.8
+		orientation: "vertical"
+		spacing: 15
+
+		Button:
+			id: convert_button_main
+			text:"Convert"
+			font_size: "19sp"
+		Button:
+			id: dictionary_button_main
+			text:"Dictionary"
+			font_size: "19sp"
+
+<TextEntry>
+	paragraph: paragraph
+	paragraph_button: paragraph_button
+	BoxLayout:
+		size: root.size
+		pos: root.pos
+		padding: 15
+		orientation: "vertical"
+		TextInput:
+			id: paragraph
+			size_hint_y: None
+			multiline: True
+			height: 300
+		Button:
+			id: paragraph_button
+			size_hint_y: 0.01
+			text: "Convert"
+			font_size: "19sp"
+
+
+<ResultEntry>
+	back: back
+	paragraph: paragraph
+	BoxLayout:
+		size: root.size
+		pos: root.pos
+		padding: 15
+		orientation: "vertical"
+		TextInput:
+			id: paragraph
+			size_hint_y: None
+			multiline: True
+			height: 300
+		Button:
+			id: back
+			size_hint_y: 0.01
+			text: "Back To Menu"
+			font_size: "19sp"
+
+
+
+
